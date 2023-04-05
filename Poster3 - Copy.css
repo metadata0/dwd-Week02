@@ -1,0 +1,230 @@
+body {
+  background-color:#f6f6f6;
+    margin: 0;
+  }
+  
+  h1 {
+    display: flex;
+    font-family: 'Silkscreen', cursive;
+    font-size: 12.4rem;
+    letter-spacing: -1.8rem;
+    font-style: italic;
+    
+    font-weight: 700;
+    line-height: 75%;
+    margin: 0;
+    /* overflow-wrap: break-word;
+    word-wrap: break-word; */
+  }
+
+  h2 {
+    color: whitesmoke;
+    display: flex;
+    font-family: 'Silkscreen', cursive;
+    font-size: 3rem;
+    letter-spacing: -0.5rem;
+    /* font-style: italic; */
+    
+    font-weight: 400;
+    line-height: 75%;
+    margin: 0;
+    /* overflow-wrap: break-word;
+    word-wrap: break-word; */
+  }
+
+  h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 75%;
+    margin: 0;
+  }
+
+  h4 {
+    color: rgba(0, 250, 0, 0);
+    font-family: 'Orbitron', sans-serif;
+    -webkit-text-stroke: 1px black;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 75%;
+    margin: 0;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* height: 40vh; */
+    /* width: fit-content; */
+  }
+
+  .centered {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .padded {
+    padding-left: 8vh;
+    padding-right: 8vh;
+  }
+
+  .flexRight {
+    display: flex;
+    justify-content: right;
+  }
+
+
+  .trackInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: stretch;
+    gap: 20px;
+    white-space: nowrap;
+  }
+
+  .songTitle {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 75%;
+    margin: 0;
+    /* overflow-wrap: break-word; */
+    /* word-wrap: break-word; */
+  }
+
+  .songDuration {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 75%;
+    margin: 0;
+  }
+  .spacing {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  #mainImg {
+    position: relative;
+    top: -0%;
+    left: 0; 
+    display: flex;
+    /* align-items: flex-start; */
+    align-self: stretch;
+    /* flex-wrap: wrap; */
+    width: 60vw;
+    height: 300px;
+  }
+
+  .boundingBox {
+    width: 1000px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: stretch;
+  }
+
+/*   
+element.style {
+  background-image: url(img/wavetable 2.png);
+  height: 500px;
+  background-position: 50% 50%;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+} */
+
+  .clip {
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    align-self: stretch;
+  }
+
+  .border {
+    border: 2px solid black
+  }
+
+  .alias {
+    font-family: "Silkscreen", sans-serif;
+    text-align: left;    
+    /* offset-position: -5rem; */
+    flex-direction: column;
+    position: relative;
+    top: -15px;
+    /* width: 500px; */
+    height: auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    padding-right: 2rem;
+    /* white-space: nowrap; */
+  }
+
+  .hStack {
+    /* word-break: break-all; */
+    /* background-color: #9e7c7c; */
+    display: flex;
+    /* width: 60vw; */
+    align-items: stretch;
+    flex-direction: row;
+    height: auto;
+  }
+
+  .hline {
+    width: 100%;
+    background-color: black;
+    height: 1px;
+    display: flex;
+    /* width:fit-content; */
+    /* padding-top: 1rem; */
+  }
+
+  .barcode {
+    font-family: "Libre Barcode 39", sans-serif;
+    display: flex;
+    justify-content: right;
+    font-size: 4rem;
+    padding: 0%;
+    position: relative;
+    /* top: -20px; */
+    margin: 0;
+  }
+
+  
+  .animationLeft {
+    white-space: nowrap;
+    align-items: flex-start;
+    animation: marqueeLeft 10s infinite linear;
+  }
+
+  .animationRight {
+    white-space: nowrap;
+    align-items: flex-end;
+    animation: marqueeRight 10s infinite linear;
+  }
+
+  @keyframes marqueeLeft{
+    0%{
+      transform: translateX(19%);
+    }
+    100%{
+      transform: translateX(-19%)
+    }
+  }
+
+  @keyframes marqueeRight{
+    0%{
+      transform: translateX(-19%);
+    }
+    100%{
+      transform: translateX(19%)
+    }
+  }
+
+  
